@@ -21,5 +21,6 @@ hoeffding_bound = [2 * np.exp(-2 * epsilon**2 * n) for epsilon in epsilons]
 plt.plot(epsilons, empirical_probabilities, label='Empirical Probability')
 plt.plot(epsilons, hoeffding_bound, label='Hoeffding Bound',)
 plt.xlabel('Epsilon')
+plt.ylabel('Probability')
 plt.legend()
 plt.show()
